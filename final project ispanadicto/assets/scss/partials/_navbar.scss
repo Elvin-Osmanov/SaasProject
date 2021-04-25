@@ -1,0 +1,164 @@
+
+
+.navbar{
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    padding-top: 10px;
+    
+    box-shadow: 0 0 15px ;
+
+    .navbar-nav{
+        margin-left: 75px;
+    }
+    
+   .logo{
+
+   
+        img{
+            width: 40px;
+            height: 40px;
+            position: relative;
+
+        
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 26.5px;
+            left: 18.5%;
+            margin-right: -30px;
+            width: 2px;
+            height: 20px;
+            background-color: #ddd;
+        }
+   }
+    
+
+    .nav-item.active{
+        background: $special-gradient!important;
+        font-weight: 600;
+        .nav-link{
+            color: white;
+        }
+        
+    }
+    .nav-link{
+        padding: 0 15px!important;
+        color: rgba(0,0,0,.5);
+    }
+
+  
+    .languages-toggle{
+
+        display: none;
+    }
+    .languages{
+       
+
+        .purple{
+            background: $special-gradient!important;
+            font-weight: 400;
+            padding: 0 8px;
+            color: white;
+            
+        }
+
+        
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar{
+
+        .logo::before{
+            display: none;
+        }
+
+        .languages{
+            display: none;
+        }
+
+        .languages-toggle{
+
+            display: block;
+            margin-left: 510px;
+
+            .purple{
+            background: $special-gradient!important;
+            font-weight: 400;
+            padding: 0 8px;
+            color: white;
+            }
+        }
+
+        .navbar-nav{
+            margin-left: 0px;
+        }
+
+        .collapse{
+            background-color: white;
+            margin-top: 20px;
+
+            ul{
+
+                li{
+                    text-align: center;
+
+                    padding: 25px 50px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .navbar{
+
+        .logo::before{
+            display: none;
+        }
+
+        .languages{
+            display: none;
+        }
+
+        .languages-toggle{
+
+            display: block;
+            margin-left: 130px;
+
+            .purple{
+                background: $special-gradient!important;
+            font-weight: 400;
+            padding: 0 8px;
+            color: white;
+            }
+        }
+
+        .navbar-nav{
+            margin-left: 0px;
+        }
+
+        .collapse{
+            background-color: white;
+            margin-top: 20px;
+
+            ul{
+
+                li{
+                    text-align: center;
+
+                    padding: 25px 50px;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,19 @@
+body{
+    font-family: $bodyFont;
+    letter-spacing: .5px;
+}
+
+
+@font-face {
+    font-family: "icomoon";
+    src: url("./../fonts/icomoon/icomoon.eot");
+    src: url("./../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"),
+      url("./../fonts/icomoon/icomoon.woff") format("woff"),
+      url("./../fonts/icomoon/icomoon.ttf") format("truetype"),
+      url("./../fonts/icomoon/icomoon.svg#icomoon") format("svg");
+}
+  
+[data-icon]:before {
+    font-family: "icomoon";
+    content: attr(data-icon);
+}

@@ -1,0 +1,15 @@
+.btn:active,
+.btn:focus,
+.btn.active{
+   
+   outline: 0;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+
+
+button.navbar-toggler:focus{
+   outline: none!important;
+
+}

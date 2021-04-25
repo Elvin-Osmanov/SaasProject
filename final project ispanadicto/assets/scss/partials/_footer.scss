@@ -1,0 +1,50 @@
+#foot{
+    background: url("../images/footer.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+
+    .copyright{
+
+        .links{
+
+            ul{
+
+                li{
+                    &:not(:last-child){
+                        margin-right: 40px;
+                    }
+
+                    span{
+                        font-size: 24px;
+                        color: $icon-color;
+                        cursor: pointer;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .copyright{
+        .links{
+
+            ul{justify-content: center;}
+
+        }
+    }
+
+}
+@media only screen and (max-width: 576px) {
+
+    .copyright{
+        .links{
+
+            ul{justify-content: center;}
+
+        }
+    }
+   
+}
